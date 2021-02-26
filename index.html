@@ -48,18 +48,30 @@
                 <a class="navbar-brand" href="home.html">
                     <img src="images/logo.png" alt="" class="img-fluid">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" >
+                <button class="navbar-toggler" type="button" onclick="openNav()" >
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <li><a class="nav-link active" href="home.html">Home</a></li>
-                     <li><a class="nav-link" href="#service">Services</a></li>
-                     <li><a class="nav-link" href="#gallery">Gallery</a></li>
-                     <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li><a class="nav-link active" href="https://eventby23.com/">Home</a></li>
+                    <li><a class="nav-link" href="#service">Services</a></li>
+                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
                 </div>
             </nav>
+
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="side-nav">
+                    <li><a class="nav-link active" href="https://eventby23.com/">Home</a></li>
+                    <li><a class="nav-link" href="#service">Services</a></li>
+                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            
         </div>
     </header>
 
@@ -245,6 +257,8 @@
     <!-- owl-carousel -->
     <script type="text/javascript" src="plugin/OwlCarousel/dist/owl.carousel.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
     <!-- Custom -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/owl.js"></script>
@@ -263,6 +277,23 @@
             header.classList.remove("sticky");
           }
         }
+
+
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+       $('.sidenav').on('click','.side-nav li a',function(){
+
+        $('#mySidenav').css('width', '0');
+
+       });
+
         </script>
 
     
