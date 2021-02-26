@@ -1,0 +1,36 @@
+@media (max-width: 767px)
+{
+
+    .social-icons-inner{
+        display: none;
+    }
+
+    .navbar-brand {
+        max-width: 30%;
+    }
+
+    .welcome-content p{
+        display: none;
+    }
+
+    .welcome-btn{
+        display: none;
+    }
+
+    .welcome-img img{
+        height: 320px;
+    }
+
+    .welcome-content {
+        bottom: 10%;
+    }
+
+    .welcome-content h2{
+       font-size: 2rem;
+    }
+
+    .owl-nav{
+        display: none;
+    }
+  
+}

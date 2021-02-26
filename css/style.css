@@ -1,0 +1,284 @@
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.social-icons-inner{
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    transform: translateY(100%);
+    margin: 0 100px;
+}
+
+.navbar-toggler i{
+    font-size: 2rem;
+    color: white;
+}
+
+.social-icon{
+    font-size: 2.5rem;
+    margin: 15px 0; 
+}
+
+.social-icon ul li{
+    margin: 15px 0;
+}
+
+.social-icon ul li a{
+    color: #171717;
+    transition: 0.25s;
+}
+
+.social-icon ul li a:hover{
+    color: #000;
+    transition: 0.25s;
+}
+
+.navbar-brand{
+    max-width: 10%;
+}
+
+.navbar-nav li .nav-link{
+    font-size: 2.5rem;
+    padding: 25px;
+    color: var(--black) !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar-nav li .nav-link::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background: #000;
+    left: 0;
+    top: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav li:hover .nav-link::before{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000a8;
+    box-shadow: 0 0 9px #00000059;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .sticky .navbar-nav li .nav-link{
+    color: #fff !important;
+  }
+
+  .sticky .navbar-brand img{
+      filter: invert(1);
+  }
+
+.welcome-section {
+    position: relative;
+}
+
+.welcome-img {
+    position: relative;
+}
+
+.welcome-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+
+.welcome-content {
+    position: absolute;
+    bottom: 30%;
+    width: 35%;
+    transform: translateX(100%);
+    text-align: center;
+}
+
+.welcome-content h2{
+    color: #fff;
+    font-family: font-2;
+    font-size: 4rem;
+}
+
+.welcome-content p{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'font-3';
+
+}
+
+.welcome-btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.welcome-btn a{
+    margin: 30px;
+    font-size: 2rem;
+    background: #5385A1;
+    border: none;
+    letter-spacing: 10px;
+    font-family: font-2;
+    border-radius: 15px;
+}
+
+.service-section{
+    background: url(../images/bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.service-inner{
+    position: relative;
+    transition: all 0.45s;
+}
+
+.service-content{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    /* height: 100%; */
+    left: 0;
+
+    
+}
+
+.service-content::before{
+    content: "";
+    position: absolute;
+    padding: 30px 10px;
+    background: #575656;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.service-bg{
+    padding: 50px 20px;
+    z-index: 999;
+    position: relative;
+}
+
+.service-content .service-bg h3{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: font-2;
+}
+
+.service-content .service-bg span{
+    color: #fff;
+    font-family: font-3; 
+}
+
+.service-content .service-bg span{
+    line-height: 25px;
+    transition: 0.45s;
+}
+
+.service-inner:hover .service-bg h3{
+    color: #000;
+    transition: 0.45s;
+}
+
+.service-inner:hover .service-bg i{
+    margin-left: 10px;
+    transition: all 0.45s;
+    color: black;
+}
+
+
+.owl-prev {
+    position: absolute;
+    top: 44%;
+    left: -40px;
+}
+
+.owl-next{
+    position: absolute;
+    top: 44%;
+    right: -40px;
+}
+
+.owl-next i,
+.owl-prev i{
+    font-size: 2.3rem; 
+}
+
+.gallery-inner{
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.gallery-section{
+    background: linear-gradient(0deg,rgba(0,0,0,.05), rgba(0,0,0,.05)), url(../images/backdrop-web.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-c {
+    margin-right: 15px;
+}
+
+.icon-c i{
+    font-size: 2.5rem;
+}
+
+.contact-info .c-info a{
+    font-family: font-3 ;
+}
+
+.c-info a{
+    color: black;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.c-info a:hover{
+    color: cornflowerblue;
+}
+
+.contact-info-section{
+    background: #00000026;
+    padding-top: 25px;
+}
+
+.contact-section{
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}

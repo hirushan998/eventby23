@@ -1,0 +1,90 @@
+/*--
+Font Pluging
+-----------------------------------*/
+@font-face{
+	font-family: 'font-1';
+    src: url(../fonts/Amatic_SC/AmaticSC-Regular.ttf); 
+}
+
+@font-face{
+	font-family: 'font-2';
+    src: url(../fonts/Amatic_SC/AmaticSC-Bold.ttf); 
+}
+
+@font-face{
+	font-family: 'font-3';
+    src: url(../fonts/Poppins-Regular.ttf); 
+}
+
+
+
+ /*--
+ Comman class
+ ----------------------------------*/
+ body, div, section, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol{
+    font-family: font-1;
+ } 
+ p{
+     color: var(--txt-color);
+ }
+.section-p-tb{
+    padding-top: 60px;
+    padding-bottom: 60px;
+ }
+.section-p-t{
+    padding-top: 60px;
+}
+.section-p-b{
+    padding-bottom: 60px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none !important;
+}
+
+.lead p {
+    color: #808080;
+    line-height: 26px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-size: 0.89rem;
+}
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #000;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+body{
+    position: relative;
+}
+
+
+
+/************------*/
+
+.section-title h1{
+    font-family: font-2;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+
