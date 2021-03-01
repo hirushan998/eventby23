@@ -10,7 +10,7 @@ header{
     left: 0;
     z-index: 999;
     transform: translateY(100%);
-    margin: 0 100px;
+    margin: 0 35px;
 }
 
 .navbar-toggler i{
