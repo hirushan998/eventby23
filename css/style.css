@@ -5,6 +5,10 @@ header{
     z-index: 9999;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .social-icons-inner{
     position: fixed;
     left: 0;
